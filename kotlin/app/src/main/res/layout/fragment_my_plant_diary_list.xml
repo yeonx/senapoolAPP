@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/my_plant_diary_list_plant_cnstly"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/darkgreen"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/my_plant_diary_list_plant_img_cardView"
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            app:cardCornerRadius="30dp"
+            android:elevation="0dp"
+            android:layout_margin="20dp"
+            app:layout_constraintTop_toTopOf="@id/my_plant_diary_list_plant_cnstly"
+            app:layout_constraintStart_toStartOf="@id/my_plant_diary_list_plant_cnstly"
+            app:layout_constraintBottom_toBottomOf="@id/my_plant_diary_list_plant_cnstly"
+            >
+            <ImageView
+                android:id="@+id/my_plant_diary_list_plant_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/my_plant_image_example"
+                android:scaleType="centerCrop"
+                />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/my_plant_diary_list_plant_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="식물 이름"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:fontFamily="@font/font_regular"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toTopOf="@id/my_plant_diary_list_plant_img_cardView"
+            app:layout_constraintStart_toEndOf="@id/my_plant_diary_list_plant_img_cardView"/>
+        <TextView
+            android:id="@+id/my_plant_diary_list_plant_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="식물 타입"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:fontFamily="@font/font_regular"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/my_plant_diary_list_plant_name_tv"
+            app:layout_constraintStart_toStartOf="@id/my_plant_diary_list_plant_name_tv"/>
+        <TextView
+            android:id="@+id/my_plant_diary_list_how_long_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D+000"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:fontFamily="@font/font_regular"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/my_plant_diary_list_plant_type_tv"
+            app:layout_constraintStart_toStartOf="@id/my_plant_diary_list_plant_type_tv"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/my_plant_diary_list_watering_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/watering_button"
+            android:text="&quot;며칠에 한번\n물을 줘야해요&quot;"
+            android:textSize="15sp"
+            android:textColor="@color/darkgreen"
+            android:textStyle="bold"
+            android:fontFamily="@font/font_regular"
+            android:lineSpacingExtra="5dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintStart_toEndOf="@id/my_plant_diary_list_plant_img_cardView"
+            app:layout_constraintBottom_toBottomOf="@id/my_plant_diary_list_plant_img_cardView"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/my_plant_diary_list_list_cnstly"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_plant_diary_list_plant_cnstly">
+
+        <TextView
+            android:id="@+id/my_plant_diary_list_new_diary_write_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="새로운 일기 쓰기"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/my_plant_diary_list_rv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:spanCount="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/my_plant_diary_list_new_diary_write_tv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:listitem="@layout/item_my_plant_diary" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

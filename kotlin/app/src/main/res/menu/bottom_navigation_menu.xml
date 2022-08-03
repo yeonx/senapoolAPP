@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/page_my_plant"
+        android:enabled="true"
+        android:title="내 식물"
+        android:icon="@drawable/plant"
+        />
+
+    <item
+        android:id="@+id/page_diary_feed"
+        android:enabled="true"
+        android:title="일기 피드"
+        android:icon="@drawable/diary"/>
+
+    <item
+        android:id="@+id/page_setting"
+        android:enabled="true"
+        android:title="설정"
+        android:icon="@drawable/settings"/>
+</menu>

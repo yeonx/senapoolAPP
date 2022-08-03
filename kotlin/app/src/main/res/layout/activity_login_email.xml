@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/pw_email_send_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/darkgreen"
+        android:visibility="gone"
+        android:fontFamily="@font/font_regular"
+        app:layout_constraintStart_toStartOf="@id/email_enroll_tv"
+        app:layout_constraintTop_toBottomOf="@id/email_enroll_tv"/>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="65dp"
+        android:fontFamily="@font/font_regular"
+        android:text="비밀번호 찾기"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email_enroll_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="180dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:hint="email"
+        android:fontFamily="@font/font_regular"
+        android:textColorHint="@color/gray"
+        android:backgroundTint="@color/black"
+
+        app:layout_constraintTop_toTopOf="@id/textView"
+        app:layout_constraintStart_toStartOf="@id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="임시 비밀번호를 메일로 보내드립니다."
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/font_regular"
+        app:layout_constraintTop_toTopOf="@id/email_enroll_tv"
+        app:layout_constraintStart_toStartOf="@id/email_enroll_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email_enroll_tv"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/email_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="330dp"
+        android:text="발송하기"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@font/font_regular"
+        android:background="@drawable/watering_button_darkgreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
