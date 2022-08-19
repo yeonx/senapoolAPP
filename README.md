@@ -1,7 +1,7 @@
-# senapoolAPP
+# 🍃senapool
 
 <details>
-<summary>데모 영상</summary>
+<summary>🎞데모 영상</summary>
 <div markdown="1">       
 
 https://user-images.githubusercontent.com/71878202/185157807-77b81b40-f2d5-4849-bcde-5305b5eb2c69.mp4
@@ -10,7 +10,7 @@ https://user-images.githubusercontent.com/71878202/185157807-77b81b40-f2d5-4849-
 </details>
 
 <details>
-<summary>ERD</summary>
+<summary>🛠ERD</summary>
 <div markdown="1">  
 
 ![image](https://user-images.githubusercontent.com/71878202/185156970-5389a547-e90c-4405-8f8a-48fc9cbd75a5.png)
@@ -19,7 +19,7 @@ https://user-images.githubusercontent.com/71878202/185157807-77b81b40-f2d5-4849-
 </details>
 
 <details>
-<summary>발표</summary>
+<summary>📝최종 발표 자료</summary>
 <div markdown="1">  
 
 ![image](https://user-images.githubusercontent.com/71878202/185643841-4480603e-7769-469c-8b63-41d2218b86b1.png)
@@ -43,6 +43,15 @@ https://user-images.githubusercontent.com/71878202/185157807-77b81b40-f2d5-4849-
 ![image](https://user-images.githubusercontent.com/71878202/185644217-22d584d2-88b8-4cfa-90e3-7d7dc0089079.png)
 ![image](https://user-images.githubusercontent.com/71878202/185644222-9c3ba59e-7188-471b-ab99-41ec31382b11.png)
 
+
+</div>
+</details>
+
+<details>
+<summary>🏆우수상 수상</summary>
+<div markdown="1">  
+
+![image](https://user-images.githubusercontent.com/71878202/185645229-85a69ae0-179d-483f-8d51-5e414076f678.png)
 
 </div>
 </details>
