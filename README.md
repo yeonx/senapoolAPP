@@ -10,15 +10,6 @@ https://user-images.githubusercontent.com/71878202/185157807-77b81b40-f2d5-4849-
 </details>
 
 <details>
-<summary>🛠ERD</summary>
-<div markdown="1">  
-
-![image](https://user-images.githubusercontent.com/71878202/185156970-5389a547-e90c-4405-8f8a-48fc9cbd75a5.png)
-
-</div>
-</details>
-
-<details>
 <summary>📝최종 발표 자료</summary>
 <div markdown="1">  
 
